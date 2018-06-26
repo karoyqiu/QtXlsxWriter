@@ -80,4 +80,5 @@ add_library(QtXlsx STATIC
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Gui REQUIRED COMPONENTS Private)
 target_compile_definitions(QtXlsx PUBLIC XLSX_NO_LIB)
+target_include_directories(QtXlsx INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}")
 target_link_libraries(QtXlsx PUBLIC Qt5::Gui Qt5::GuiPrivate)
