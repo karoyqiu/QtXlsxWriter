@@ -1016,6 +1016,14 @@ bool Worksheet::addConditionalFormatting(const ConditionalFormatting &cf)
     return true;
 }
 
+
+QList<QXlsx::DataValidation> QXlsx::Worksheet::dataValidations() const
+{
+    Q_D(const Worksheet);
+    return d->dataValidationsList;
+}
+
+
 /*!
  * Insert an \a image  at the position \a row, \a column
  * Returns true on success.

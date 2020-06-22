@@ -85,6 +85,7 @@ public:
 
     bool addDataValidation(const DataValidation &validation);
     bool addConditionalFormatting(const ConditionalFormatting &cf);
+    QList<DataValidation> dataValidations() const;
 
     Cell *cellAt(const CellReference &row_column) const;
     Cell *cellAt(int row, int column) const;
