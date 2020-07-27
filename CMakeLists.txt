@@ -8,7 +8,7 @@ add_subdirectory("src/xlsx")
 # Installation configuration
 #
 #####
-install(TARGETS QtXlsxWriter
+install(TARGETS QtXlsx
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib${LIB_SUFFIX}
   ARCHIVE DESTINATION lib${LIB_SUFFIX}
